@@ -1,5 +1,8 @@
 :root {
     --sleeveSize: 15em;
+    --sleevePeak: 1;
+    --sleeveDropoff: 0;
+    --sleeveBottom: -0.5;
 }
 
 body {
@@ -68,28 +71,28 @@ li {
 	view-timeline-axis: inline;
 }
 
-@keyframes adjust-translation {
+@keyframes adjustTranslationPhone {
 	0% {
-        transform: translateY(calc(var(--sleeveSize)*0.8));
+        transform: translateY(calc(var(--sleeveSize)* -1 * var(--sleeveBottom)));
 	}
 
     45%{
-        transform: translateY(calc(var(--sleeveSize)*0));
+        transform: translateY(calc(var(--sleeveSize)* -1 * var(--sleeveDropoff)));
     } 
 
 	50% {
-		transform: translateY(calc(var(--sleeveSize)*-0.3));
+		transform: translateY(calc(var(--sleeveSize)* -1 * var(--sleevePeak)));
 	}
     55%{
-        transform: translateY(calc(var(--sleeveSize)*0));
+        transform: translateY(calc(var(--sleeveSize)* -1 *var(--sleeveDropoff)));
     }
 	100% {
-		transform: translateY(calc(var(--sleeveSize)*0.8));
+		transform: translateY(calc(var(--sleeveSize)* -1 * var(--sleeveBottom)));
 	}
 }
 
 .cards li {
-	animation: linear adjust-translation both;
+	animation: linear adjustTranslationPhone both;
 	animation-timeline: --li-in-and-out-of-view;
 }
 
