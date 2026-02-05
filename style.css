@@ -39,6 +39,7 @@ li{
 }
 
 img {
+    position: relative;
     width: var(--sleeveSize);
     height: var(--sleeveSize);
     z-index: 2;
@@ -53,8 +54,8 @@ nav div{
     top: calc(var(--sleeveSize)*0.0125);
     left: calc(var(--sleeveSize)*0.0125);
     border-radius: 100em;
-
     transition: transform 0.4s ease;
+    z-index: 1;
 
 }
 
