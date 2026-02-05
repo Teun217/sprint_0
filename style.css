@@ -1,28 +1,38 @@
 :root {
-    --sleeveSize: 25em;
+    --sleeveSize: 15em;
 }
 
 body {
+    height: 100vh;
     margin: 0;
+
 }
 
+
+/* */
 /* SNAPPING SLEEVE TO THE MIDDLE */
-nav {
-    scroll-snap-type: y mandatory;
-}
+nav{
+position: absolute;
+bottom: 0;
+width: 100vw;
 
+}
 
 ul {
-    max-height: 100vh;
+    height: calc(var(--sleeveSize)*4);
     margin: 0;
-    overflow-y: scroll;
+    overflow-x: scroll;
     padding: 0;
-    scroll-snap-type: y mandatory;
+    scroll-snap-type: x mandatory;
+    display: flex;
+    align-items: flex-end;
 }
 
 li{
     list-style-type: none;
     scroll-snap-align: center;
+    margin: 0.25em;
+    height: fit-content;
 }
 
 img {
@@ -32,7 +42,7 @@ img {
 }
 
 /* DIV AS RECORD */
-div{
+nav div{
     width: calc(var(--sleeveSize)*0.975);
     height: calc(var(--sleeveSize) * 0.975);
     background-color: black;
@@ -40,14 +50,13 @@ div{
     top: calc(var(--sleeveSize)*0.0125);
     left: calc(var(--sleeveSize)*0.0125);
     border-radius: 100em;
-    z-index: 1;
 
     transition: transform 0.4s ease;
 
 }
 
-div:hover{
-    transform: translateX(calc(var(--sleeveSize) * 0.6));
+nav div:hover{
+    transform: translatey(calc(var(--sleeveSize) * -0.6));
 }
 
 /* SCROLL BASED TRANSLATION */
@@ -56,26 +65,26 @@ div:hover{
 li {
 	/* Track this element as it intersects the scrollport */
 	view-timeline-name: --li-in-and-out-of-view;
-	view-timeline-axis: block;
+	view-timeline-axis: inline;
 }
 
 @keyframes adjust-translation {
 	0% {
-        translate: 0em;
+        transform: translateY(calc(var(--sleeveSize)*0.8));
 	}
 
     45%{
-        translate: calc(var(--sleeveSize)*0.05);
+        transform: translateY(calc(var(--sleeveSize)*0));
     } 
 
 	50% {
-		translate: calc(var(--sleeveSize)*0.85); /* When at the center, be on top */
+		transform: translateY(calc(var(--sleeveSize)*-0.3));
 	}
     55%{
-        translate: calc(var(--sleeveSize)*0.05);
+        transform: translateY(calc(var(--sleeveSize)*0));
     }
 	100% {
-		translate: 0em;
+		transform: translateY(calc(var(--sleeveSize)*0.8));
 	}
 }
 
