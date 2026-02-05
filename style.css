@@ -1,0 +1,87 @@
+:root {
+    --sleeveSize: 25em;
+}
+
+body {
+    margin: 0;
+}
+
+/* SNAPPING SLEEVE TO THE MIDDLE */
+nav {
+    scroll-snap-type: y mandatory;
+}
+
+
+ul {
+    max-height: 100vh;
+    margin: 0;
+    overflow-y: scroll;
+    padding: 0;
+    scroll-snap-type: y mandatory;
+}
+
+li{
+    list-style-type: none;
+    scroll-snap-align: center;
+}
+
+img {
+    width: var(--sleeveSize);
+    height: var(--sleeveSize);
+    z-index: 2;
+}
+
+/* DIV AS RECORD */
+div{
+    width: calc(var(--sleeveSize)*0.975);
+    height: calc(var(--sleeveSize) * 0.975);
+    background-color: black;
+    position: absolute;
+    top: calc(var(--sleeveSize)*0.0125);
+    left: calc(var(--sleeveSize)*0.0125);
+    border-radius: 100em;
+    z-index: 1;
+
+    transition: transform 0.4s ease;
+
+}
+
+div:hover{
+    transform: translateX(calc(var(--sleeveSize) * 0.6));
+}
+
+/* SCROLL BASED TRANSLATION */
+/* BRON: https://scroll-driven-animations.style/demos/cover-flow/css/ */
+
+li {
+	/* Track this element as it intersects the scrollport */
+	view-timeline-name: --li-in-and-out-of-view;
+	view-timeline-axis: block;
+}
+
+@keyframes adjust-translation {
+	0% {
+        translate: 0em;
+	}
+
+    45%{
+        translate: calc(var(--sleeveSize)*0.05);
+    } 
+
+	50% {
+		translate: calc(var(--sleeveSize)*0.85); /* When at the center, be on top */
+	}
+    55%{
+        translate: calc(var(--sleeveSize)*0.05);
+    }
+	100% {
+		translate: 0em;
+	}
+}
+
+.cards li {
+	animation: linear adjust-translation both;
+	animation-timeline: --li-in-and-out-of-view;
+}
+
+
