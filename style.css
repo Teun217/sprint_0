@@ -54,13 +54,14 @@ nav div{
     top: calc(var(--sleeveSize)*0.0125);
     left: calc(var(--sleeveSize)*0.0125);
     border-radius: 100em;
-    transition: transform 0.4s ease;
     z-index: 1;
 
 }
 
-nav div:hover{
-    transform: translatey(calc(var(--sleeveSize) * -0.6));
+nav div div {
+    width: calc(var(--sleeveSize)*0.5);
+    height: calc(var(--sleeveSize)*0.5);
+    background-color: red;
 }
 
 /* SCROLL BASED TRANSLATION */
@@ -71,6 +72,30 @@ li {
 	view-timeline-name: --li-in-and-out-of-view;
 	view-timeline-axis: inline;
 }
+
+
+/* Vinyl out of sleeve */
+li:hover{
+    --theme:showVinyl;
+}
+
+@container style(--theme:showVinyl){
+    li>div{
+        animation: --showVinyl 0.5s ease-in-out;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes --showVinyl{
+    0%{
+        transform: translateY(0em);
+    }
+    100%{
+        transform: translateY(calc(-0.99*var(--sleeveSize)));
+    }
+}
+
+/* scroll based Translation */
 
 @keyframes adjustTranslationPhone {
 	0% {
