@@ -1,6 +1,6 @@
 :root {
     --sleeveSize: 15em;
-    --sleevePeak: 1;
+    --sleevePeak: 0.4;
     --sleeveDropoff: 0;
     --sleeveBottom: -0.5;
 }
@@ -11,6 +11,9 @@ body {
 
 }
 
+nav{
+    max-height: 100vh;
+}
 
 /* */
 /* SNAPPING SLEEVE TO THE MIDDLE */
@@ -55,13 +58,13 @@ nav div{
     left: calc(var(--sleeveSize)*0.0125);
     border-radius: 100em;
     z-index: 1;
-
 }
 
 nav div div {
     width: calc(var(--sleeveSize)*0.5);
     height: calc(var(--sleeveSize)*0.5);
     background-color: red;
+    margin: calc(var(--sleeveSize)*0.25)
 }
 
 /* SCROLL BASED TRANSLATION */
@@ -91,7 +94,7 @@ li:hover{
         transform: translateY(0em);
     }
     100%{
-        transform: translateY(calc(-0.99*var(--sleeveSize)));
+        transform: translateY(calc(-0.75*var(--sleeveSize)));
     }
 }
 
