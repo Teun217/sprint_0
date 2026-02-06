@@ -46,7 +46,7 @@ ul {
     scroll-snap-type: x mandatory;
     display: flex;
     align-items: flex-end;
-    padding: 0 calc(var(--sleeveSize)*2);
+    padding: 0 calc(50vw - var(--sleeveSize)*0.5);
 
 }
 
@@ -55,7 +55,7 @@ ul {
         display: block;
         height: 100vh;
         scroll-snap-type: y mandatory;
-        padding: 0;
+        padding: calc(50vh - var(--sleeveSize)*0.5) 0;
     }
 }
 
@@ -113,20 +113,14 @@ li {
 }
 
 /* Vinyl out of sleeve */
-li:hover{
-    --theme:showVinyl;
-}
-li > div {
-    transition: 0.5s;
-}
-li:hover > div{
-    transform: translateY(calc(-0.75*var(--sleeveSize)));
-}
 
 @media (min-width: 600px){
+    li > div {
+     transition: 0.5s;
+    }
     li:hover > div{
     transform: translateX(calc(0.75*var(--sleeveSize)));
-}
+    }
 }
 
 
@@ -153,6 +147,27 @@ li:hover > div{
 	}
 }
 
+@keyframes moveRecord{
+    0%{
+        transform: translateY(calc(0*var(--sleeveSize)));
+    }
+    49%{
+        transform: translateY(calc(0*var(--sleeveSize)));
+    }
+    50%{
+        transform: translateY(calc(-0.65*var(--sleeveSize)));
+    }
+    51%{
+        transform: translateY(calc(0*var(--sleeveSize)));
+    }
+    {
+        transform: translateY(calc(0*var(--sleeveSize)));
+    }
+    100%{
+        transform: translateY(calc(0*var(--sleeveSize)));
+    }
+}
+
 @media (min-width: 600px){
     @keyframes adjustTranslation {
 	0% {
@@ -174,9 +189,18 @@ li:hover > div{
 	}
 }}
 
-.cards li {
+nav li {
 	animation: linear adjustTranslation both;
 	animation-timeline: --li-in-and-out-of-view;
+}
+
+@media (max-width: 600px) {
+    li > div{
+        animation: linear moveRecord both;
+        //animation-delay: 1s;
+        animation-timeline: --li-in-and-out-of-view;
+    }
+
 }
 
 
