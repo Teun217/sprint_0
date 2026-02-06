@@ -1,8 +1,8 @@
 :root {
     --sleeveSize: 10em;
-    --sleevePeak: 0.4;
+    --sleevePeak: 0.5;
     --sleeveDropoff: 0;
-    --sleeveBottom: -0.5;
+    --sleeveBottom: -0.2;
 }
 
 body {
@@ -21,7 +21,7 @@ max-height: 100vh;
 }
 
 ul {
-    height: calc(var(--sleeveSize)*4);
+    height: calc(var(--sleeveSize)*2.5);
     margin: 0;
     overflow-x: scroll;
     padding: 0;
@@ -42,13 +42,14 @@ img {
     width: var(--sleeveSize);
     height: var(--sleeveSize);
     z-index: 2;
+    /* opacity: 0.5; */
 }
 
 /* DIV AS RECORD */
-nav div{
+nav li > div{
     width: calc(var(--sleeveSize)*0.975);
     height: calc(var(--sleeveSize) * 0.975);
-    background-color: black;
+    background: radial-gradient(circle, transparent 10%, black 10%);
     position: absolute;
     top: calc(var(--sleeveSize)*0.0125);
     left: calc(var(--sleeveSize)*0.0125);
@@ -56,12 +57,15 @@ nav div{
     z-index: 1;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 nav div div {
-    width: calc(var(--sleeveSize)*0.5);
-    height: calc(var(--sleeveSize)*0.5);
-    background-color: red;
+    width: calc(var(--sleeveSize)*0.45);
+    height: calc(var(--sleeveSize)*0.45);
+    background: radial-gradient(circle, transparent 10%, red 10%);
+    border-radius: 100em;
+    display: block;
 }
 
 /* SCROLL BASED TRANSLATION */
