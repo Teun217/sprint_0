@@ -46,6 +46,7 @@ ul {
     scroll-snap-type: x mandatory;
     display: flex;
     align-items: flex-end;
+    padding: 0 calc(var(--sleeveSize)*2);
 
 }
 
