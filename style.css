@@ -5,6 +5,16 @@
     --sleeveBottom: -0.2;
 }
 
+@media (min-width: 600px){
+    :root {
+        --sleeveSize: 15em;
+        --sleevePeak: 0.5;
+        --sleeveDropoff: 0;
+        --sleeveBottom: -0.2;
+    }
+}
+
+
 body {
     max-height: 100vh;
     margin: 0;
@@ -20,6 +30,12 @@ width: 100vw;
 max-height: 100vh;
 }
 
+@media (min-width: 600px){
+    nav{
+        position: relative;
+    }
+}
+
 ul {
     height: calc(var(--sleeveSize)*2.5);
     margin: 0;
@@ -28,6 +44,15 @@ ul {
     scroll-snap-type: x mandatory;
     display: flex;
     align-items: flex-end;
+}
+
+@media (min-width: 600px){
+    ul{
+        display: block;
+        height: 100vh;
+        width: calc(var(--sleeveSize)*2.5);
+        scroll-snap-type: y mandatory;
+    }
 }
 
 li{
@@ -72,11 +97,15 @@ nav div div {
 /* BRON: https://scroll-driven-animations.style/demos/cover-flow/css/ */
 
 li {
-	/* Track this element as it intersects the scrollport */
 	view-timeline-name: --li-in-and-out-of-view;
 	view-timeline-axis: inline;
 }
 
+@media (min-width: 600px){
+    li {
+        view-timeline-axis: block;
+    }
+}
 
 /* Vinyl out of sleeve */
 li:hover{
@@ -99,9 +128,20 @@ li:hover{
     }
 }
 
+@media (min-width: 600px){
+    @keyframes --showVinyl{
+    0%{
+        transform: translateX(-0em);
+    }
+    100%{
+        transform: translateX(calc(0.75*var(--sleeveSize)));
+    }
+}
+}
+
 /* scroll based Translation */
 
-@keyframes adjustTranslationPhone {
+@keyframes adjustTranslation {
 	0% {
         transform: translateY(calc(var(--sleeveSize)* -1 * var(--sleeveBottom)));
 	}
@@ -121,8 +161,29 @@ li:hover{
 	}
 }
 
+@media (min-width: 600px){
+    @keyframes adjustTranslation {
+	0% {
+        transform: translateX(calc(var(--sleeveSize)* var(--sleeveBottom)));
+	}
+
+    45%{
+        transform: translateX(calc(var(--sleeveSize)* var(--sleeveDropoff)));
+    } 
+
+	50% {
+		transform: translateX(calc(var(--sleeveSize)* var(--sleevePeak)));
+	}
+    55%{
+        transform: translateX(calc(var(--sleeveSize)*var(--sleeveDropoff)));
+    }
+	100% {
+		transform: translateX(calc(var(--sleeveSize)* var(--sleeveBottom)));
+	}
+}}
+
 .cards li {
-	animation: linear adjustTranslationPhone both;
+	animation: linear adjustTranslation both;
 	animation-timeline: --li-in-and-out-of-view;
 }
 
