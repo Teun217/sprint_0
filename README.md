@@ -41,3 +41,27 @@ De theme's waren erg interessant. Ik heb deze meteen toegepast om met een hover 
 - platen gestyled krijgen
 - select de plaat on click
 - begin platenspeler
+
+
+# Maandag 09-02-2025
+ ziek
+
+ # Dinsdag 10-02-2025
+
+ # Wat heb ik vandaag gedaan?
+
+
+## Woensdag 11-02-2025
+
+# code conventions
+Naamgeving prima
+CamelCase en snake_case door elkaar heen -> niet goed
+Engels gebruik ik
+volledig uitgeschreven naamgeving
+
+# html conventions
+geen h1 > geen correcte semantiek
+
+# CSS conventions
+css volgt qua volgorde html matig tot niet
+roept meerdere 
