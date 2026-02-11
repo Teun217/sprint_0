@@ -6,8 +6,8 @@
 
 #### Wat heb ik vandaag gedaan?
 
-2 workshops bijgewoond over API en hoe je informatie API kan trekken.
-Begonnen met de website, die hoezen vormgegeven en geprobeerd met CSS, ga verder dat proberen te doen met JS want flexibeler in wat ik wanneer kan laten bewegen.
+2 workshops bijgewoond over API en hoe je informatie API kan pullen.
+Begonnen met de website, die hoezen vormgegeven en geprobeerd interactie toe te voegen met CSS, ga verder dat proberen te doen met JS want flexibeler in wat ik wanneer kan laten bewegen.
 De weekly nerd gezien.
 
 #### Hoeveel tijd heeft dat me gekost?
@@ -15,20 +15,24 @@ De weekly nerd gezien.
 
 #### Wat heb ik vandaag geleerd?
 Dat ik even moet inkomen, ben veel weer vergeten.
-Ik weet nu hoe ik met API's om moet gaan.
+Ik weet nu enigzins hoe ik met API's om moet gaan.
 
 #### Wat ga ik morgen doen?
 
-Op advies van Mila: codepens checken van de andere cursussen (teams)
+Op advies van Mila: codepens checken van de andere cursussen (teams).
 Ik wil de in ieder geval de "selected" animatie af krijgen van de hoezen en de platen.
 
+### Weekly nerd
+
+Kilian Valkhof gaf deze week de presentatie. Het nut van CSS over JS gebruiken is uitgelegd: een minder krachtige tool gebruiken zolang je wél kan bereiken wat je wil bereiken is over het algemeen het meest consistent. Verder heeft Kilian uitgelegd hoeveel er eigenlijk te stijlen valt met CSS, bijvoorbeeld kan je van een input type checkbox een switch maken met alleen CSS.
+Ook heeft Kilian het gehad over scroll based animations en daar wil ik morgen verder mee aan de slag.
 
 ## Donderdag 05-02-26
 
 ### Reflectie
 
 #### Wat heb ik vandaag gedaan?
-De workshopes over theme's bijgewoond.
+De workshops over theme's bijgewoond.
 Gisteren tijdens de presentatie van Kilian Valkhof had hij het over scroll based animations. Dat heb ik vandaag geprobeerd te implementeren.
 Als de plaat in het midden komt schuift hij naar voren.
 
@@ -39,12 +43,17 @@ Als de plaat in het midden komt schuift hij naar voren.
 #### Wat heb ik vandaag geleerd?
 
 De theme's waren erg interessant. Ik heb deze meteen toegepast om met een hover op een afbeelding de div daaronder te verplaatsen.
+Dit bleek later op de dag te ingewikkeld gedacht en ik heb dit teruggedraait naar een eenvoudige hover op de LI en de div daar binnen die wordt verplaatst.
 
 #### Wat ga ik morgen doen?
 
 - platen gestyled krijgen
 - select de plaat on click
 - begin platenspeler
+
+## Weekreflectie
+
+Ik moet echt weer wennen aan coderen, heel veel is weggezakt en zeker JS vind ik intimiderend en erg lastig.
 
 # Week 2
 
