@@ -51,7 +51,9 @@ De theme's waren erg interessant. Ik heb deze meteen toegepast om met een hover 
  # Wat heb ik vandaag gedaan?
 
 
-## Woensdag 11-02-2025
+### Woensdag 11-02-2025
+
+## convention check
 
 # code conventions
 Naamgeving prima
@@ -65,3 +67,7 @@ geen h1 > geen correcte semantiek
 # CSS conventions
 css volgt qua volgorde html matig tot niet
 roept meerdere 
+
+## Reflectie
+ 
+ # Wat heb ik vandaag gedaan?
