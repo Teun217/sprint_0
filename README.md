@@ -54,6 +54,8 @@ Dit bleek later op de dag te ingewikkeld gedacht en ik heb dit teruggedraait naa
 ## Weekreflectie
 Ik moet echt weer wennen aan coderen, heel veel is weggezakt en zeker JS vind ik intimiderend en erg lastig. Verder in algemene zin ben ik vele malen trager dan ik zou willen zijn.
 Ook ben ik even bezig geweest met het responsive maken van de website, ik wou namelijk dat zodra de website breder dan 600px zou zijn, dat de platen dan naar de zijkant gingen omdat er in dat geval waarschijnlijk (op een desktop) meer ruimte zou zijn voor de platenspeler op de horizontale axis dan op de verticale.
+[response_horizontal.tiff](https://github.com/user-attachments/files/25244990/response_horizontal.tiff)
+[responsive_vertical.tiff](https://github.com/user-attachments/files/25244989/responsive_vertical.tiff)
 
 # Week 2
 
