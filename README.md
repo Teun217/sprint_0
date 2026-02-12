@@ -1,4 +1,4 @@
-# Week 1
+![schets_general](https://github.com/user-attachments/assets/caf33616-372c-4d75-9f2b-4cb83d3226da)# Week 1
 
 ## Woensdag 04-02-26
 
@@ -8,6 +8,9 @@
 
 2 workshops bijgewoond over API en hoe je informatie API kan pullen.
 Geschetst wat ik wil gaan maken.
+![schets_general](https://github.com/user-attachments/assets/ebb4507b-3ec3-466b-9893-0109e02639fa)
+
+
 Begonnen met de website, die hoezen vormgegeven en geprobeerd interactie toe te voegen met CSS, ga verder dat proberen te doen met JS want flexibeler in wat ik wanneer kan laten bewegen.
 De weekly nerd gezien.
 
@@ -55,6 +58,9 @@ Dit bleek later op de dag te ingewikkeld gedacht en ik heb dit teruggedraait naa
 ## Weekreflectie
 Ik moet echt weer wennen aan coderen, heel veel is weggezakt en zeker JS vind ik intimiderend en erg lastig. Verder in algemene zin ben ik vele malen trager dan ik zou willen zijn.
 Ook ben ik even bezig geweest met het responsive maken van de website, ik wou namelijk dat zodra de website breder dan 600px zou zijn, dat de platen dan naar de zijkant gingen omdat er in dat geval waarschijnlijk (op een desktop) meer ruimte zou zijn voor de platenspeler op de horizontale axis dan op de verticale.
+[responsive_vertical.tiff](https://github.com/user-attachments/files/25254933/responsive_vertical.tiff)
+[response_horizontal.tiff](https://github.com/user-attachments/files/25254938/response_horizontal.tiff)
+
 
 # Week 2
 
@@ -104,7 +110,11 @@ Daar heb ik heel lang op vast gezeten en daar had ik achteraf wat beter hulp bij
 JS ligt me momenteel gewoon echt niet en dat vind ik super frustrerend.
 
 Uiteindelijk heb ik de data herhalend en door elkaar meerdere keren naast elkaar gezet zodat het een groot tekstveld wordt.
-Dit moest laten denken aan de teksten die achter op de covers van vinylplaten staan. Daarnaast heb ik met CSS 3 opties qua styling opgemaakt en JS kiest daarin een willekeurige opmaak per hoes uit.
+Dit moest laten denken aan de teksten die achter op de covers van vinylplaten staan.
+Deze layouts heb ik geschetst.
+![schets_sleeves_back](https://github.com/user-attachments/assets/f6814bc5-b8a1-4987-8fce-9f64fcaf807c)
+
+Hievoor heb ik met CSS 3 opties qua styling opgemaakt en JS kiest daarin een willekeurige opmaak per hoes uit.
 De opmaak van de hoezen heb ik van te voren geschetst.
 
 Ook heb ik wat tijd besteed aan regel voor regel de geschreven JS echt bergrijpen. 
@@ -135,6 +145,9 @@ Ik heb mijn leerdoelen opgevolgd:
 De platen als nav is een leuk alternatief.
 Ik heb van te voren schetsjes gemaakt om te bepalen wat ik ging coderen 
 en ik heb weer nieuwe dingen met CSS geleerd zoals scrollbased animations en --themes.
+![schets_general](https://github.com/user-attachments/assets/48d776f1-c3d4-4f8c-873e-53a73600214e)
+[response_horizontal.tiff](https://github.com/user-attachments/files/25254968/response_horizontal.tiff)
+
 
 Ook moet ik komende projecten echt beter het procesverslag bijhouden want ik heb het nu heel vaak heel snel en beknopt opgeschreven en dan begrijp ik er later zelf geen sikkepit meer van.
 
