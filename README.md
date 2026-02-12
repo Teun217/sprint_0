@@ -7,6 +7,7 @@
 #### Wat heb ik vandaag gedaan?
 
 2 workshops bijgewoond over API en hoe je informatie API kan pullen.
+Geschetst wat ik wil gaan maken.
 Begonnen met de website, die hoezen vormgegeven en geprobeerd interactie toe te voegen met CSS, ga verder dat proberen te doen met JS want flexibeler in wat ik wanneer kan laten bewegen.
 De weekly nerd gezien.
 
@@ -104,6 +105,8 @@ JS ligt me momenteel gewoon echt niet en dat vind ik super frustrerend.
 
 Uiteindelijk heb ik de data herhalend en door elkaar meerdere keren naast elkaar gezet zodat het een groot tekstveld wordt.
 Dit moest laten denken aan de teksten die achter op de covers van vinylplaten staan. Daarnaast heb ik met CSS 3 opties qua styling opgemaakt en JS kiest daarin een willekeurige opmaak per hoes uit.
+De opmaak van de hoezen heb ik van te voren geschetst.
+
 Ook heb ik wat tijd besteed aan regel voor regel de geschreven JS echt bergrijpen. 
 Dat heb ik er in notities bijgezet.
 
@@ -127,6 +130,11 @@ Uiteindelijk heb ik de functionele "platenspeler" ook moeten laten zitten.
 
 Wel lijkt het me heel leuk om dit project te revisitten en om aan de slag te gaan met de API van discogs om mijn daadwerkelijke platencollectie in een site tentoon te stellen. Wel vind ik het dus prettig dat ik merk enthausiast te worden over de mogelijkheden naast de frustratie dat ik nog niet altijd weet hoe.
 Voor mezelf moet ik ook een wat vaster systeem gaan vinden hoe ik codeer want ik moet nu elke keer rondrazen in mijn document om te werken waar ik wil werken, dat werkt nogal chaotisch.
+
+Ik heb mijn leerdoelen opgevolgd:
+De platen als nav is een leuk alternatief.
+Ik heb van te voren schetsjes gemaakt om te bepalen wat ik ging coderen 
+en ik heb weer nieuwe dingen met CSS geleerd zoals scrollbased animations en --themes.
 
 Ook moet ik komende projecten echt beter het procesverslag bijhouden want ik heb het nu heel vaak heel snel en beknopt opgeschreven en dan begrijp ik er later zelf geen sikkepit meer van.
 
